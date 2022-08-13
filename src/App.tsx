@@ -1,13 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <div>
+      <header className="bg-green-100">
+        <p className="bg-red-50">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
@@ -21,6 +19,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
