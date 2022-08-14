@@ -8,13 +8,14 @@ type SectionProps = {
 const Section = ({ children, className }: SectionProps) => {
   return (
     <div
-      className={`bg-green-200 ${className}`}
+      className={`bg-green-200 p-2 my-4 `}
       style={{ backgroundColor: "#f9f6f6" }}
     >
-      <div className={`border-dashed border-2 p-2 min-h-[60vh] text-center `}>
+      <div
+        className={`border-dashed border-2 p-2 text-center min-h-[90vh] ${className}`}
+      >
         {children}
       </div>
-      {children}
     </div>
   );
 };
@@ -23,10 +24,10 @@ const Section = ({ children, className }: SectionProps) => {
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: "#f8edeb" }}>
-      <Section className="text-dark-blue">
+    <div className="container p-4" style={{ backgroundColor: "#f8edeb" }}>
+      <Section className="text-dark-blue flex flex-col">
         <div className="font-dancing text-5xl">Luke & Eva</div>
-        {/* <img src="/home.jpg" alt="home"/> */}
+        <img src="/home.jpg" alt="home" className="w-full" />
         <div className="font-dynaPuff text-xl">WEDDING DAY</div>
         <div className="font-dynaPuff text-base">PLEASE SAVE THE DATE</div>
       </Section>
